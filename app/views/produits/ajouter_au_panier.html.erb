@@ -1,0 +1,10 @@
+<h1>Votre panier<h1>
+
+</ol>
+<% for item in @panier.selection %>
+ <li><%= @ppp.find(item).nom %>
+<%end%>
+</ol>
+</br>
+<%= link_to "Return to Shopping", :action => "index" %>
+<%= link_to "vider le panier", :action => "vider_panier" %>
